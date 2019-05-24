@@ -1,13 +1,16 @@
 import React from 'react'
 import ColumnContainer from '../Column/ColumnContainer'
 import ColumnAdder from '../Column/ColumnAdder'
+import './style.css'
 
 const Board = ({ columnsId }) => (
   <div className="board">
-    {columnsId.map(columnId => (
-      <ColumnContainer key={columnId} columnId={columnId} />
-    ))}
-    <ColumnAdder />
+    <div className="board_wrapper">
+      {columnsId.map(columnId => (
+        <ColumnContainer key={columnId} columnId={columnId} />
+      ))}
+      <ColumnAdder />
+    </div>
   </div>
 )
 

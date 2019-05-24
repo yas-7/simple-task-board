@@ -18,7 +18,11 @@
 
 body {
   margin: 0;
-  background: center / cover #0f1e35 url("./assets/images/background.jpg")
-    no-repeat;
   font-family: "Montserrat", sans-serif;
+}
+.app {
+  background: center / cover #0f1e35 url("./assets/images/background.jpg") no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

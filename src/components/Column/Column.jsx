@@ -1,6 +1,7 @@
 import React from 'react'
 import CardContainer from '../Card/CardContainer'
 import CardAdder from '../Card/CardAdder'
+import './style.css'
 
 const Column = ({ column }) => {
   return (

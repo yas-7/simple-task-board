@@ -1,0 +1,17 @@
+.board {
+  position: relative;
+  flex: 1;
+  font-size: 13px;
+  line-height: 19px;
+}
+.board_wrapper {
+  display: flex;
+  align-items: flex-start;
+  overflow-x: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+}
