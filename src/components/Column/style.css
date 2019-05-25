@@ -4,7 +4,7 @@
   width: 272px;
   flex-shrink: 0;
   max-height: 100%;
-  margin-right: 10px;
+  margin-right: 12px;
   padding: 8px 12px 12px 12px;
   box-sizing: border-box;
   border-radius: 3px;
@@ -14,24 +14,15 @@
 }
 
 .column_title {
-  margin-bottom: 12px;
   text-transform: capitalize;
   font-weight: bold;
 }
 
 .column_content {
-  min-height: 10px;
+  margin-top: 12px;
   overflow-y: auto;
 }
 
-.add-block_input {
-  width: 100%;
-  border-radius: 3px;
-  border: none;
-  box-shadow: 0px 1px 4px rgba(9, 45, 66, 0.25);
-  padding: 8px 12px;
-  box-sizing: border-box;
-  font-family: 'Montserrat';
-  font-size: 13px;
-  line-height: 19px;
+.column_adder {
+  padding-top: 12px;
 }
