@@ -68,7 +68,7 @@ const ColumnAdder = ({ dispatch }) => {
           </form>
         ) : (
           <span className="trigger__label" onClick={() => setOpen(true)}>
-            Добавить еще одну карточку
+            Добавить еще одну колонку
           </span>
         )}
       </div>
