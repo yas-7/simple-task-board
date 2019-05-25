@@ -1,6 +1,6 @@
 import React from 'react'
 import ColumnContainer from '../Column/ColumnContainer'
-import ColumnAdder from '../Column/ColumnAdder'
+import ColumnAdder from '../Adder/ColumnAdder'
 import './style.css'
 
 const Board = ({ columnsId }) => (

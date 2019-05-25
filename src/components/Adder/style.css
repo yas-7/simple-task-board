@@ -1,0 +1,61 @@
+.trigger__label{
+  display: block;
+  background:  left center transparent url('../../assets/images/svg/Vector.svg' ) no-repeat;
+  padding-left: 23px;
+  color: #6B808C;
+  cursor: pointer;
+}
+.add-block__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.add-block__submit {
+  background: #39C071;
+  border-radius: 3px;
+  font-weight: bold;
+  font-family: 'Montserrat';
+  font-size: 13px;
+  line-height: 19px;
+  border: none;
+  color: #fff;
+  padding: 7px 8px 4px 8px;
+}
+.add-block__cancel {
+  width: 15px;
+  height: 15px;
+  border: none;
+  background: transparent url('../../assets/images/svg/cross.svg') no-repeat;
+  padding: 0;
+  cursor: pointer;
+}
+
+.add-block__input {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 0px 1px 4px rgba(9, 45, 66, 0.25);
+  font-family: 'Montserrat';
+  font-size: 13px;
+  line-height: 19px;
+  box-sizing: border-box;
+}
+
+.add-block__textarea {
+  display: block;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 0px 1px 4px rgba(9, 45, 66, 0.25);
+  font-family: 'Montserrat';
+  font-size: 13px;
+  line-height: 19px;
+  box-sizing: border-box;
+  resize: none;
+}
