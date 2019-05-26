@@ -40,6 +40,7 @@ const CardAdder = ({ columnId, dispatch }) => {
 
   useEffect(() => {
     if (open) {
+      textareaEl.current.focus()
       document.addEventListener('mousedown', handleClickOutside)
     } else {
       document.removeEventListener('mousedown', handleClickOutside)

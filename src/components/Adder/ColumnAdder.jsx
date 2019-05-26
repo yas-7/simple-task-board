@@ -7,6 +7,7 @@ const ColumnAdder = ({ dispatch }) => {
   const [title, setTitle] = useState('')
   const [open, setOpen] = useState(false)
   const triggerEl = useRef()
+  const inputEl = useRef()
 
   const handleClickOutside = e => {
     if (triggerEl.current.contains(e.target)) {
@@ -24,6 +25,7 @@ const ColumnAdder = ({ dispatch }) => {
 
   useEffect(() => {
     if (open) {
+      inputEl.current.focus()
       document.addEventListener('mousedown', handleClickOutside)
     } else {
       document.removeEventListener('mousedown', handleClickOutside)
@@ -55,6 +57,7 @@ const ColumnAdder = ({ dispatch }) => {
             <input
               className="add-block__input"
               value={title}
+              ref={inputEl}
               onChange={handleChange}
               placeholder="Введите название колонки"
             />
