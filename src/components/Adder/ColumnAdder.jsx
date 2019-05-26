@@ -59,6 +59,7 @@ const ColumnAdder = ({ dispatch }) => {
             ref={inputEl}
             onChange={handleChange}
             placeholder="Введите название колонки"
+            required
           />
 
           <div className="add-block__controls">

@@ -62,6 +62,7 @@ const CardAdder = ({ columnId, dispatch }) => {
             rows="1"
             onChange={handleChange}
             placeholder="Введите название карточки"
+            required
           />
           <div className="add-block__controls">
             <button className="add-block__submit" type="submit">
