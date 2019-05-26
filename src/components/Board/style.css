@@ -4,7 +4,7 @@
   font-size: 13px;
   line-height: 19px;
 }
-.board_wrapper {
+.board__wrapper {
   display: flex;
   align-items: flex-start;
   overflow-x: auto;

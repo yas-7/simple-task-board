@@ -6,8 +6,8 @@ import './style.css'
 const Column = ({ column }) => {
   return (
     <div className="column">
-      <div className="column_title">{column.title}</div>
-      <div className="column_content">
+      <div className="column__title">{column.title}</div>
+      <div className="column__content">
         {column.cards.map(cardId => (
           <CardContainer key={cardId} cardId={cardId} />
         ))}

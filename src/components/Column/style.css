@@ -13,12 +13,12 @@
   text-align: left;
 }
 
-.column_title {
+.column__title {
   text-transform: capitalize;
   font-weight: bold;
 }
 
-.column_content {
+.column__content {
   margin-top: 12px;
   overflow-y: auto;
 }
