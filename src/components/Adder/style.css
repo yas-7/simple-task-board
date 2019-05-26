@@ -1,9 +1,14 @@
-.trigger__label{
+.add-block__btn{
   display: block;
   background:  left center transparent url('../../assets/images/svg/Vector.svg' ) no-repeat;
   padding-left: 23px;
   color: #6B808C;
   cursor: pointer;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  line-height: 19px;
+  font-size: 13px;
+  text-align: left;
 }
 .add-block__controls {
   display: flex;

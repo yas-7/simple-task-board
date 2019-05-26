@@ -6,11 +6,11 @@ import './style.css'
 const CardAdder = ({ columnId, dispatch }) => {
   const [text, setText] = useState('')
   const [open, setOpen] = useState(false)
-  const triggerEl = useRef()
+  const box = useRef()
   const textareaEl = useRef()
 
   const handleClickOutside = e => {
-    if (triggerEl.current.contains(e.target)) {
+    if (box.current.contains(e.target)) {
       // inside click
       return
     }
@@ -52,31 +52,29 @@ const CardAdder = ({ columnId, dispatch }) => {
   }, [open])
 
   return (
-    <div className="add-block">
-      <div className="trigger" ref={triggerEl}>
-        {open ? (
-          <form action="" onSubmit={onSubmitTask}>
-            <textarea
-              ref={textareaEl}
-              className="add-block__textarea"
-              value={text}
-              rows="1"
-              onChange={handleChange}
-              placeholder="Введите название карточки"
-            />
-            <div className="add-block__controls">
-              <button className="add-block__submit" type="submit">
-                Добавить карточку
-              </button>
-              <button className="add-block__cancel" onClick={handleClose} />
-            </div>
-          </form>
-        ) : (
-          <span className="trigger__label" onClick={() => setOpen(true)}>
-            Добавить еще одну карточку
-          </span>
-        )}
-      </div>
+    <div className="add-block" ref={box}>
+      {open ? (
+        <form action="" onSubmit={onSubmitTask}>
+          <textarea
+            ref={textareaEl}
+            className="add-block__textarea"
+            value={text}
+            rows="1"
+            onChange={handleChange}
+            placeholder="Введите название карточки"
+          />
+          <div className="add-block__controls">
+            <button className="add-block__submit" type="submit">
+              Добавить карточку
+            </button>
+            <button className="add-block__cancel" onClick={handleClose} />
+          </div>
+        </form>
+      ) : (
+        <button className="add-block__btn" onClick={() => setOpen(true)}>
+          Добавить еще одну карточку
+        </button>
+      )}
     </div>
   )
 }
