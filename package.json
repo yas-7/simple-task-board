@@ -2,7 +2,9 @@
   "name": "kanban",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kasmenai.github.io/simple-task-board",
   "dependencies": {
+    "gh-pages": "^3.1.0",
     "react": "^16.8.6",
     "react-beautiful-dnd": "^11.0.3",
     "react-dom": "^16.8.6",
@@ -11,6 +13,8 @@
     "redux": "^4.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
