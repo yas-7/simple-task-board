@@ -1,6 +1,6 @@
-## Simple TaskBoard [![Build Status](https://travis-ci.org/Kasmenai/simple-task-board.svg?branch=master)](https://travis-ci.org/Kasmenai/simple-task-board)
+## Simple TaskBoard
 
-## [Live Demo](https://kasmenai.github.io/simple-task-board/)
+## [Live Demo](https://yas-7.github.io/simple-task-board/)
 
 ### Тестовое задание:
 Сделать упрощённый вариант канбан-доски, на которой можно:
